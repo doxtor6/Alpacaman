@@ -21,7 +21,11 @@ Here is a process flow diagram of alpacaman:
    ```bash
    pip install -r requirements.txt
    ```
-2. Download Weight files.
+2. Install cudakit (Use the version that works for your GPU)
+   ```bash
+   conda install -c "nvidia/label/cuda-11.7.0" cuda-toolkit   
+     ```
+3. Download Weight files.
    Here we are using the 13B LLAMA as base model('decapoda-research/llama-13b-hf'), thus we need lora weights for 13B. Here I recommend [chansung/gpt4-alpaca-lora-13b](https://huggingface.co/chansung/gpt4-alpaca-lora-13b)
    
    
@@ -33,7 +37,7 @@ Here is a process flow diagram of alpacaman:
     cp gpt4-alpaca-lora-13b/* lora-alpacaman
    ```
 
-3. Run the alpacaman.py
+4. Run the alpacaman.py
    The base model file should be download automatially.
    ```bash
    python alpacaman.py
