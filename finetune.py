@@ -164,7 +164,7 @@ def train(
         return tokenized_full_prompt
 
     
-    LORA_WEIGHTS = "./gpt4-alpaca-lora-13b"
+    LORA_WEIGHTS = "./lora-alpacaman"
     model = PeftModel.from_pretrained(
         modell,
         LORA_WEIGHTS,
