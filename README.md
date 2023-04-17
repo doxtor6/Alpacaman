@@ -27,3 +27,4 @@ Alpacaman is an Alpaca-lora based Chatbot with infinite memory by finetune.
    ```bash
    python alpacaman.py
    ```
+If you meet unexpected error when loading base model, check your cuda version first.
