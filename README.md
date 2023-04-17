@@ -11,7 +11,7 @@ Alpacaman offers a potential comprehensive resolution by fine-tuning the memory 
 
 Here is a process flow diagram of alpacaman:
 
-![alt text](https://github.com/doxtor6/Alpacaman/blob/main/alpacaman_sg.jpg)
+![alt text](https://github.com/doxtor6/Alpacaman/blob/main/process.jpg)
 
 
 ### Setup
