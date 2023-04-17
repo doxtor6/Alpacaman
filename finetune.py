@@ -32,7 +32,7 @@ if ddp:
 
 
 def train(
-    model,
+    modell,
     # model/data params
     base_model: str = "decapoda-research/llama-13b-hf",  # the only required argument
     data_path: str = "alpacaman_data.json",
@@ -164,12 +164,15 @@ def train(
         return tokenized_full_prompt
 
     
-    LORA_WEIGHTS = "./lora-alpacaman"
+    LORA_WEIGHTS = "./gpt4-alpaca-lora-13b"
     model = PeftModel.from_pretrained(
-        model,
+        modell,
         LORA_WEIGHTS,
-        torch_dtype=torch.float16,
+        torch_dtype=torch.float32,
     )
+    for p in model.parameters():
+        if p.dtype == torch.float32:
+            p.requires_grad = True
 
     if data_path.endswith(".json") or data_path.endswith(".jsonl"):
         data = load_dataset("json", data_files=data_path)
