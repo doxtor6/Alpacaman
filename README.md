@@ -19,7 +19,7 @@ Alpacaman is an Alpaca-lora based Chatbot with infinite memory by finetune.
     conda install git-lfs
     git-lfs install
     git clone https://huggingface.co/chansung/gpt4-alpaca-lora-13b
-    cp gpt4-alpaca-lora-13b/* lora-alpcaman
+    cp gpt4-alpaca-lora-13b/* lora-alpacaman
    ```
 
 3. Run the alpacaman.py
