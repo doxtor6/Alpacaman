@@ -3,6 +3,17 @@ Alpacaman is an Alpaca-lora based Chatbot with infinite memory by finetune.
 
 ![alt text](https://github.com/doxtor6/Alpacaman/blob/main/alpacaman_sg.jpg)
 
+### Intro
+
+In the majority of large language models (LLMs), the input token limit imposes significant constraints on potential applications. This limitation, often referred to as memory restriction, has emerged as a critical issue. Various methods have been proposed to address this problem. For instance, Langchain has been widely employed to augment the memory capacity of LLMs using a vector database. However, this approach serves only as a temporary enhancement rather than a definitive solution.
+
+Alpacaman offers a potential comprehensive resolution by fine-tuning the memory within the Lora layer of the LLM, theoretically allowing for unlimited memory storage. Although one primary drawback of this method is the risk of memory loss during the fine-tuning process, the approach still presents a noticeable advantage in terms of long-term memory retention.
+
+Here is a process flow diagram of alpacaman:
+
+![alt text](https://github.com/doxtor6/Alpacaman/blob/main/alpacaman_sg.jpg)
+
+
 ### Setup
 
 1. Install dependencies (The same as [tloen/alpaca-lora](https://github.com/tloen/alpaca-lora/))
