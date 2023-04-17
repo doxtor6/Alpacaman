@@ -73,7 +73,7 @@ def main():
     write_list(finetunelist,"alpacaman_data.json")
     boolfinetune = input("Do you want to finetune this conversation, (You can modify the 'output' in alpacaman_data.json at this moment to inject memory.): (Y/N)")
     if boolfinetune =="Y":
-        nepch = input("Enter the number of epochs for finetune. A large number means this conversation is harder to forget.（Recommend 10 as default)： ")
+        nepch = input("Enter the number of epochs for finetune. A large number means this conversation is harder to forget.（Recommend 50 as default)： ")
         inputjson = read_list("alpacaman_data.json")
         databasecode.savedanmu([["alpacaman",current_time,inputjson[0]["output"]]])
         finetune.train(generate.modelforfinetune,num_epochs = int(nepch))
