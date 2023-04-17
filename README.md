@@ -21,7 +21,7 @@ Here is a process flow diagram of alpacaman:
    ```bash
    pip install -r requirements.txt
    ```
-2. Install cudakit (Use the version that works for your GPU)
+2. Install cudatoolkit (Use the version that works for your GPU)
    ```bash
    conda install -c "nvidia/label/cuda-11.7.0" cuda-toolkit   
      ```
