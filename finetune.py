@@ -170,9 +170,6 @@ def train(
         LORA_WEIGHTS,
         torch_dtype=torch.float32,
     )
-    for p in model.parameters():
-        if p.dtype == torch.float32:
-            p.requires_grad = True
 
     if data_path.endswith(".json") or data_path.endswith(".jsonl"):
         data = load_dataset("json", data_files=data_path)
